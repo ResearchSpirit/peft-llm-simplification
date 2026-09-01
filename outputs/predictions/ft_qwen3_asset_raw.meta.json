@@ -1,0 +1,8 @@
+{
+  "system": "ft_qwen3",
+  "dataset": "asset",
+  "n": 359,
+  "adapter_signature": "51a5cc38f2692881",
+  "decoding_signature": "31607132a7b5c0e0",
+  "written_at_utc": "2026-08-30T08:37:10Z"
+}

@@ -1,0 +1,13 @@
+dataset,system,display,pct_hit_token_cap,mean_length_ratio,n_empty_predictions,decoding_artefact,reason
+asset,zeroshot_gemma3,Gemma-3 1B (zero-shot),95.26,10.119,0,True,95.3% truncated at the 256-token cap; output 10.1x the source length
+asset,zeroshot_qwen3,Qwen3 1.7B (zero-shot),0.0,1.032,0,False,
+asset,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),23.68,3.753,0,True,23.7% truncated at the 256-token cap; output 3.8x the source length
+asset,ft_gemma3,Gemma-3 1B (fine-tuned),0.0,0.88,0,False,
+asset,ft_qwen3,Qwen3 1.7B (fine-tuned),0.0,0.875,0,False,
+asset,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),0.0,0.862,0,False,
+medeasi,zeroshot_gemma3,Gemma-3 1B (zero-shot),98.67,12.448,0,True,98.7% truncated at the 256-token cap; output 12.4x the source length
+medeasi,zeroshot_qwen3,Qwen3 1.7B (zero-shot),0.0,1.497,0,False,
+medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),22.0,4.151,0,True,22.0% truncated at the 256-token cap; output 4.2x the source length
+medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),0.0,1.021,0,False,
+medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),0.0,1.291,0,False,
+medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),0.0,0.902,0,False,

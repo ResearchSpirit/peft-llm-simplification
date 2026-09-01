@@ -1,0 +1,8 @@
+dataset,system,display,n_full,n_clean,sari_full,sari_clean,sari_delta,sari_clean_ci95,bertscore_raw_full,bertscore_raw_clean,bertscore_raw_delta,bertscore_raw_clean_ci95,bertscore_rescaled_full,bertscore_rescaled_clean,bertscore_rescaled_delta,bertscore_rescaled_clean_ci95,fkgl_full,fkgl_clean,fkgl_delta,fkgl_clean_ci95
+medeasi,identity,Copy source (identity),300,282,49.24,48.39,-0.85,"[46.98, 49.76]",92.04,91.67,-0.38,"[91.11, 92.19]",52.86,50.63,-2.24,"[47.30, 53.74]",13.64,13.67,0.03,"[13.05, 14.31]"
+medeasi,zeroshot_gemma3,Gemma-3 1B (zero-shot),300,282,37.93,38.76,0.83,"[37.43, 40.31]",82.26,82.21,-0.05,"[82.05, 82.36]",-5.1,-5.38,-0.29,"[-6.38, -4.51]",12.38,12.35,-0.03,"[12.10, 12.63]"
+medeasi,zeroshot_qwen3,Qwen3 1.7B (zero-shot),300,282,38.36,39.38,1.02,"[37.70, 41.01]",90.78,90.55,-0.23,"[90.17, 90.88]",45.37,44.01,-1.35,"[41.76, 45.96]",10.27,10.2,-0.07,"[9.77, 10.65]"
+medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),300,282,37.83,37.78,-0.05,"[36.30, 39.19]",87.68,87.54,-0.15,"[87.02, 88.04]",27.03,26.15,-0.88,"[23.12, 29.16]",12.62,12.71,0.1,"[12.07, 13.47]"
+medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),300,282,40.27,40.01,-0.27,"[38.27, 41.69]",90.62,90.28,-0.35,"[89.81, 90.72]",44.44,42.38,-2.06,"[39.60, 45.04]",10.62,10.55,-0.07,"[9.98, 11.12]"
+medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),300,282,37.36,38.22,0.86,"[36.29, 40.33]",88.89,88.66,-0.23,"[88.32, 89.02]",34.18,32.83,-1.36,"[30.78, 34.94]",10.54,10.54,-0.0,"[10.02, 11.09]"
+medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),300,282,37.09,37.86,0.77,"[36.00, 39.72]",89.52,89.35,-0.17,"[88.94, 89.76]",37.92,36.89,-1.04,"[34.47, 39.33]",9.89,9.92,0.03,"[9.39, 10.46]"

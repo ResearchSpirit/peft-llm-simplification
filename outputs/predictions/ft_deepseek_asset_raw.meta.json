@@ -1,0 +1,8 @@
+{
+  "system": "ft_deepseek",
+  "dataset": "asset",
+  "n": 359,
+  "adapter_signature": "1d42d0c72161f17b",
+  "decoding_signature": "31607132a7b5c0e0",
+  "written_at_utc": "2026-08-30T08:58:20Z"
+}

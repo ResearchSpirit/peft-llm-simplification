@@ -1,0 +1,27 @@
+{
+  "timestamp_utc": "2026-08-30T09:59:16Z",
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "gpu": "Tesla T4",
+  "gpu_total_memory_gb": 15.64,
+  "bf16_supported": false,
+  "transformers": "5.5.0",
+  "peft": "0.20.0",
+  "datasets": "4.3.0",
+  "evaluate": "0.4.6",
+  "bert_score": "0.3.12",
+  "textstat": [
+    0,
+    7,
+    13
+  ],
+  "matplotlib": "3.10.0",
+  "numpy": "2.1.3",
+  "pandas": "2.2.3",
+  "unsloth_available": true,
+  "unsloth": "2026.8.22",
+  "in_colab": true,
+  "smoke_test": false
+}

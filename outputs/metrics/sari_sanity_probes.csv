@@ -1,0 +1,6 @@
+probe,prediction,sari
+copy the source verbatim,The chemotherapy regimen was administered intravenously over six hours.,45.87
+a genuine simplification (matches reference 1),The chemo drugs were given through a vein over six hours.,83.86
+delete half the sentence,The chemotherapy regimen was administered.,23.8
+unrelated sentence,The weather in Jakarta is hot today.,31.38
+empty output,,25.11

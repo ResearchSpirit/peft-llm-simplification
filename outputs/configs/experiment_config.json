@@ -1,0 +1,114 @@
+{
+  "title": "Scaling Down Simplicity: Evaluating Lightweight Language Models for Sentence Simplification",
+  "notebook_version": "v2",
+  "seed": 42,
+  "smoke_test": false,
+  "datasets": {
+    "asset": {
+      "hf_id": "facebook/asset",
+      "hf_config": "simplification",
+      "train_split": "validation",
+      "test_split": "test",
+      "train_size": 2000,
+      "test_size": 359,
+      "n_evaluated": 359,
+      "references_per_test_source_max": 10
+    },
+    "medeasi": {
+      "hf_id": "cbasu/Med-EASi",
+      "hf_config": null,
+      "train_split": "train",
+      "test_split": "test",
+      "train_size": 1397,
+      "test_size": 300,
+      "n_evaluated": 300,
+      "references_per_test_source_max": 1
+    }
+  },
+  "models": {
+    "gemma3": {
+      "hf_model": "google/gemma-3-1b-it",
+      "loaded_checkpoint": "unsloth/gemma-3-1b-it-bnb-4bit",
+      "template": "chat",
+      "eos_token": "<end_of_turn>",
+      "total_params": 1012931712,
+      "trainable_params": 13045760,
+      "trainable_pct": 1.288
+    },
+    "qwen3": {
+      "hf_model": "Qwen/Qwen3-1.7B",
+      "loaded_checkpoint": "unsloth/Qwen3-1.7B-bnb-4bit",
+      "template": "chat",
+      "eos_token": "<|im_end|>",
+      "total_params": 1738007552,
+      "trainable_params": 17432576,
+      "trainable_pct": 1.003
+    },
+    "deepseek": {
+      "hf_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "loaded_checkpoint": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+      "template": "alpaca",
+      "eos_token": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+      "total_params": 1795552768,
+      "trainable_params": 18464768,
+      "trainable_pct": 1.028
+    }
+  },
+  "systems_evaluated": {
+    "asset": [
+      "identity",
+      "gold_loo",
+      "zeroshot_gemma3",
+      "zeroshot_qwen3",
+      "zeroshot_deepseek",
+      "ft_gemma3",
+      "ft_qwen3",
+      "ft_deepseek"
+    ],
+    "medeasi": [
+      "identity",
+      "zeroshot_gemma3",
+      "zeroshot_qwen3",
+      "zeroshot_deepseek",
+      "ft_gemma3",
+      "ft_qwen3",
+      "ft_deepseek"
+    ]
+  },
+  "metrics": {
+    "sari": "HuggingFace evaluate 'sari', all available references",
+    "bertscore_raw": "bert-score 0.3.12, roberta-large, layer 17, multi-reference (max), NO baseline rescaling",
+    "bertscore_rescaled": "same, rescale_with_baseline=True",
+    "bertscore_singleref_raw": "raw, first reference only - kept for continuity with V1",
+    "fkgl": "textstat (0, 7, 13) flesch_kincaid_grade, mean over sentences"
+  },
+  "literature_baselines": "Qiang et al. (2025), arXiv:2502.08281 - reported values, not re-run here",
+  "framework": "Unsloth + HF Trainer",
+  "environment": {
+    "timestamp_utc": "2026-08-30T09:59:16Z",
+    "python": "3.13.15",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "gpu": "Tesla T4",
+    "gpu_total_memory_gb": 15.64,
+    "bf16_supported": false,
+    "transformers": "5.5.0",
+    "peft": "0.20.0",
+    "datasets": "4.3.0",
+    "evaluate": "0.4.6",
+    "bert_score": "0.3.12",
+    "textstat": [
+      0,
+      7,
+      13
+    ],
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "unsloth_available": true,
+    "unsloth": "2026.8.22",
+    "in_colab": true,
+    "smoke_test": false
+  }
+}

@@ -1,0 +1,25 @@
+dataset,model,metric,finetuned,zeroshot,n_pairs,difference,ci95_of_difference,alternative,p_one_sided,significant_at_0.05
+asset,Gemma-3 1B,sari,46.57,40.52,359,6.05,"[5.04, 7.09]",fine-tuned > zero-shot,0.0,True
+asset,Gemma-3 1B,bertscore_raw,97.54,83.99,359,13.56,"[13.36, 13.77]",fine-tuned > zero-shot,0.0,True
+asset,Gemma-3 1B,bertscore_rescaled,85.45,5.12,359,80.33,"[79.16, 81.61]",fine-tuned > zero-shot,0.0,True
+asset,Gemma-3 1B,fkgl,8.75,11.91,359,-3.16,"[-3.49, -2.84]",fine-tuned < zero-shot,0.0,True
+asset,Qwen3 1.7B,sari,41.96,44.11,359,-2.15,"[-3.11, -1.23]",fine-tuned > zero-shot,1.0,False
+asset,Qwen3 1.7B,bertscore_raw,96.31,96.57,359,-0.27,"[-0.50, -0.01]",fine-tuned > zero-shot,0.987,False
+asset,Qwen3 1.7B,bertscore_rescaled,78.11,79.69,359,-1.58,"[-2.96, -0.07]",fine-tuned > zero-shot,0.987,False
+asset,Qwen3 1.7B,fkgl,7.94,9.37,359,-1.42,"[-1.73, -1.11]",fine-tuned < zero-shot,0.0,True
+asset,DeepSeek-Distill 1.5B,sari,44.71,43.19,359,1.53,"[0.29, 2.82]",fine-tuned > zero-shot,0.008,True
+asset,DeepSeek-Distill 1.5B,bertscore_raw,97.02,92.08,359,4.94,"[4.40, 5.53]",fine-tuned > zero-shot,0.0,True
+asset,DeepSeek-Distill 1.5B,bertscore_rescaled,82.32,53.05,359,29.28,"[26.08, 32.78]",fine-tuned > zero-shot,0.0,True
+asset,DeepSeek-Distill 1.5B,fkgl,8.5,11.18,359,-2.68,"[-3.02, -2.36]",fine-tuned < zero-shot,0.0,True
+medeasi,Gemma-3 1B,sari,40.27,37.93,300,2.35,"[0.44, 4.23]",fine-tuned > zero-shot,0.008,True
+medeasi,Gemma-3 1B,bertscore_raw,90.62,82.26,300,8.36,"[7.98, 8.76]",fine-tuned > zero-shot,0.0,True
+medeasi,Gemma-3 1B,bertscore_rescaled,44.44,-5.1,300,49.54,"[47.27, 51.93]",fine-tuned > zero-shot,0.0,True
+medeasi,Gemma-3 1B,fkgl,10.62,12.38,300,-1.76,"[-2.28, -1.24]",fine-tuned < zero-shot,0.0,True
+medeasi,Qwen3 1.7B,sari,37.36,38.36,300,-0.99,"[-2.68, 0.60]",fine-tuned > zero-shot,0.889,False
+medeasi,Qwen3 1.7B,bertscore_raw,88.89,90.78,300,-1.89,"[-2.24, -1.50]",fine-tuned > zero-shot,1.0,False
+medeasi,Qwen3 1.7B,bertscore_rescaled,34.18,45.37,300,-11.18,"[-13.29, -8.91]",fine-tuned > zero-shot,1.0,False
+medeasi,Qwen3 1.7B,fkgl,10.54,10.27,300,0.27,"[-0.29, 0.89]",fine-tuned < zero-shot,0.818,False
+medeasi,DeepSeek-Distill 1.5B,sari,37.09,37.83,300,-0.74,"[-2.69, 1.00]",fine-tuned > zero-shot,0.782,False
+medeasi,DeepSeek-Distill 1.5B,bertscore_raw,89.52,87.68,300,1.84,"[1.32, 2.37]",fine-tuned > zero-shot,0.0,True
+medeasi,DeepSeek-Distill 1.5B,bertscore_rescaled,37.92,27.03,300,10.89,"[7.80, 14.05]",fine-tuned > zero-shot,0.0,True
+medeasi,DeepSeek-Distill 1.5B,fkgl,9.89,12.62,300,-2.73,"[-3.56, -2.05]",fine-tuned < zero-shot,0.0,True

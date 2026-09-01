@@ -1,0 +1,13 @@
+dataset,model,metric,difference_full,difference_clean,ci95_of_difference_clean,alternative,p_one_sided_clean,significant_at_0.05_clean
+medeasi,Gemma-3 1B,sari,2.35,1.25,"[-0.56, 2.89]",fine-tuned > zero-shot,0.097,False
+medeasi,Gemma-3 1B,bertscore_raw,8.36,8.06,"[7.64, 8.48]",fine-tuned > zero-shot,0.0,True
+medeasi,Gemma-3 1B,bertscore_rescaled,49.54,47.76,"[45.29, 50.23]",fine-tuned > zero-shot,0.0,True
+medeasi,Gemma-3 1B,fkgl,-1.76,-1.8,"[-2.33, -1.26]",fine-tuned < zero-shot,0.0,True
+medeasi,Qwen3 1.7B,sari,-0.99,-1.16,"[-2.79, 0.66]",fine-tuned > zero-shot,0.905,False
+medeasi,Qwen3 1.7B,bertscore_raw,-1.89,-1.89,"[-2.24, -1.53]",fine-tuned > zero-shot,1.0,False
+medeasi,Qwen3 1.7B,bertscore_rescaled,-11.18,-11.18,"[-13.28, -9.08]",fine-tuned > zero-shot,1.0,False
+medeasi,Qwen3 1.7B,fkgl,0.27,0.34,"[-0.26, 0.92]",fine-tuned < zero-shot,0.864,False
+medeasi,DeepSeek-Distill 1.5B,sari,-0.74,0.07,"[-1.79, 1.86]",fine-tuned > zero-shot,0.475,False
+medeasi,DeepSeek-Distill 1.5B,bertscore_raw,1.84,1.81,"[1.28, 2.39]",fine-tuned > zero-shot,0.0,True
+medeasi,DeepSeek-Distill 1.5B,bertscore_rescaled,10.89,10.74,"[7.59, 14.15]",fine-tuned > zero-shot,0.0,True
+medeasi,DeepSeek-Distill 1.5B,fkgl,-2.73,-2.8,"[-3.56, -2.10]",fine-tuned < zero-shot,0.0,True

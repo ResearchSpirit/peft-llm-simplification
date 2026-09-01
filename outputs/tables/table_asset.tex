@@ -1,0 +1,22 @@
+\begin{table}
+\caption{Results on the ASSET test set (n=359). Rows marked 'reported' are quoted from Qiang et al. (2025), arXiv:2502.08281 - reported values, not re-run here and were not re-run.}
+\label{tab:asset}
+\begin{tabular}{llrrrl}
+\toprule
+display & group & sari & bertscore & fkgl & provenance \\
+\midrule
+Gold references & Reference & 45.27 & 78.89 & 6.53 & reported (not re-run) \\
+MUSS-mined & Supervised & 42.29 & 79.86 & 8.18 & reported (not re-run) \\
+LLaMA-3.1 70B & Large LLM & 47.27 & 79.80 & 5.62 & reported (not re-run) \\
+GPT-4o & Large LLM & 49.20 & 86.38 & 7.20 & reported (not re-run) \\
+Copy source (identity) & Trivial baseline & 53.78 & 91.91 & 11.64 & measured (this work) \\
+Gold reference (LOO) & Reference & 43.47 & 79.79 & 8.32 & measured (this work) \\
+Gemma-3 1B (zero-shot) & Ours (zero-shot) & 40.52 & 5.12 & 11.91 & measured (this work) \\
+Qwen3 1.7B (zero-shot) & Ours (zero-shot) & 44.11 & 79.69 & 9.37 & measured (this work) \\
+DeepSeek-Distill 1.5B (zero-shot) & Ours (zero-shot) & 43.19 & 53.05 & 11.18 & measured (this work) \\
+Gemma-3 1B (fine-tuned) & Ours (fine-tuned) & 46.57 & 85.45 & 8.75 & measured (this work) \\
+Qwen3 1.7B (fine-tuned) & Ours (fine-tuned) & 41.96 & 78.11 & 7.94 & measured (this work) \\
+DeepSeek-Distill 1.5B (fine-tuned) & Ours (fine-tuned) & 44.71 & 82.32 & 8.50 & measured (this work) \\
+\bottomrule
+\end{tabular}
+\end{table}

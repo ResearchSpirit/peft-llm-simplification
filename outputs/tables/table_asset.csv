@@ -1,0 +1,13 @@
+display,group,sari,bertscore,fkgl,provenance,bertscore_raw,bertscore_singleref_raw
+Gold references,Reference,45.27,78.89,6.53,reported (not re-run),,
+MUSS-mined,Supervised,42.29,79.86,8.18,reported (not re-run),,
+LLaMA-3.1 70B,Large LLM,47.27,79.8,5.62,reported (not re-run),,
+GPT-4o,Large LLM,49.2,86.38,7.2,reported (not re-run),,
+Copy source (identity),Trivial baseline,53.78,91.91,11.64,measured (this work),98.63,95.56
+Gold reference (LOO),Reference,43.47,79.79,8.32,measured (this work),96.59,94.36
+Gemma-3 1B (zero-shot),Ours (zero-shot),40.52,5.12,11.91,measured (this work),83.99,83.17
+Qwen3 1.7B (zero-shot),Ours (zero-shot),44.11,79.69,9.37,measured (this work),96.57,94.27
+DeepSeek-Distill 1.5B (zero-shot),Ours (zero-shot),43.19,53.05,11.18,measured (this work),92.08,90.33
+Gemma-3 1B (fine-tuned),Ours (fine-tuned),46.57,85.45,8.75,measured (this work),97.54,94.92
+Qwen3 1.7B (fine-tuned),Ours (fine-tuned),41.96,78.11,7.94,measured (this work),96.31,94.12
+DeepSeek-Distill 1.5B (fine-tuned),Ours (fine-tuned),44.71,82.32,8.5,measured (this work),97.02,94.52

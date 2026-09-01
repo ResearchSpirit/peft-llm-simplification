@@ -1,0 +1,512 @@
+{
+  "gemma3_asset": {
+    "model": "gemma3",
+    "dataset": "asset",
+    "train_examples": 2000,
+    "train_loss": 0.6313691902160644,
+    "loss_first_logged": 1.3480751037597656,
+    "loss_last_logged": 0.4218072509765625,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 1.3480751037597656
+      },
+      {
+        "step": 100,
+        "loss": 0.6952519989013672
+      },
+      {
+        "step": 150,
+        "loss": 0.7038356781005859
+      },
+      {
+        "step": 200,
+        "loss": 0.6500263214111328
+      },
+      {
+        "step": 250,
+        "loss": 0.7031576538085937
+      },
+      {
+        "step": 300,
+        "loss": 0.4431463241577148
+      },
+      {
+        "step": 350,
+        "loss": 0.44724246978759763
+      },
+      {
+        "step": 400,
+        "loss": 0.44604591369628904
+      },
+      {
+        "step": 450,
+        "loss": 0.4551031875610352
+      },
+      {
+        "step": 500,
+        "loss": 0.4218072509765625
+      }
+    ],
+    "global_steps": 500,
+    "model_load_time_s": 40.05,
+    "data_prep_time_s": 2.15,
+    "pure_train_time_s": 1235.28,
+    "pure_train_time_min": 20.59,
+    "trainable_params": 13045760,
+    "total_params": 1012931712,
+    "trainable_pct": 1.288,
+    "peak_gpu_memory_gb": 1.67,
+    "adapter_size_mb": 52.23,
+    "eos_token": "<end_of_turn>",
+    "eos_token_id": 106,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 2000,
+      "n_skipped": 0,
+      "n_truncated": 0,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 147.8,
+      "mean_response_tokens": 23.0
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/gemma3_asset",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/gemma-3-1b-it-bnb-4bit",
+    "trained_at_utc": "2026-08-30T04:01:06Z"
+  },
+  "gemma3_medeasi": {
+    "model": "gemma3",
+    "dataset": "medeasi",
+    "train_examples": 1397,
+    "train_loss": 1.260417229788644,
+    "loss_first_logged": 2.260802917480469,
+    "loss_last_logged": 0.963299560546875,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 2.260802917480469
+      },
+      {
+        "step": 100,
+        "loss": 1.3409721374511718
+      },
+      {
+        "step": 150,
+        "loss": 1.2770915985107423
+      },
+      {
+        "step": 200,
+        "loss": 1.1112273406982422
+      },
+      {
+        "step": 250,
+        "loss": 0.9322531127929687
+      },
+      {
+        "step": 300,
+        "loss": 0.937273941040039
+      },
+      {
+        "step": 350,
+        "loss": 0.963299560546875
+      }
+    ],
+    "global_steps": 350,
+    "model_load_time_s": 29.41,
+    "data_prep_time_s": 1.82,
+    "pure_train_time_s": 868.78,
+    "pure_train_time_min": 14.48,
+    "trainable_params": 13045760,
+    "total_params": 1012931712,
+    "trainable_pct": 1.288,
+    "peak_gpu_memory_gb": 2.82,
+    "adapter_size_mb": 52.23,
+    "eos_token": "<end_of_turn>",
+    "eos_token_id": 106,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 1397,
+      "n_skipped": 0,
+      "n_truncated": 0,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 156.1,
+      "mean_response_tokens": 27.3
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/gemma3_medeasi",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/gemma-3-1b-it-bnb-4bit",
+    "trained_at_utc": "2026-08-30T04:16:18Z"
+  },
+  "qwen3_asset": {
+    "model": "qwen3",
+    "dataset": "asset",
+    "train_examples": 2000,
+    "train_loss": 0.5650278434753419,
+    "loss_first_logged": 1.0223784637451172,
+    "loss_last_logged": 0.41997547149658204,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 1.0223784637451172
+      },
+      {
+        "step": 100,
+        "loss": 0.6143803787231445
+      },
+      {
+        "step": 150,
+        "loss": 0.618129997253418
+      },
+      {
+        "step": 200,
+        "loss": 0.5877019119262695
+      },
+      {
+        "step": 250,
+        "loss": 0.6307931518554688
+      },
+      {
+        "step": 300,
+        "loss": 0.4347102737426758
+      },
+      {
+        "step": 350,
+        "loss": 0.434189453125
+      },
+      {
+        "step": 400,
+        "loss": 0.44346614837646486
+      },
+      {
+        "step": 450,
+        "loss": 0.44455318450927733
+      },
+      {
+        "step": 500,
+        "loss": 0.41997547149658204
+      }
+    ],
+    "global_steps": 500,
+    "model_load_time_s": 43.56,
+    "data_prep_time_s": 4.07,
+    "pure_train_time_s": 932.62,
+    "pure_train_time_min": 15.54,
+    "trainable_params": 17432576,
+    "total_params": 1738007552,
+    "trainable_pct": 1.003,
+    "peak_gpu_memory_gb": 3.15,
+    "adapter_size_mb": 69.78,
+    "eos_token": "<|im_end|>",
+    "eos_token_id": 151645,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 2000,
+      "n_skipped": 0,
+      "n_truncated": 0,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 149.2,
+      "mean_response_tokens": 23.5
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/qwen3_asset",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/Qwen3-1.7B-bnb-4bit",
+    "trained_at_utc": "2026-08-30T04:32:50Z"
+  },
+  "qwen3_medeasi": {
+    "model": "qwen3",
+    "dataset": "medeasi",
+    "train_examples": 1397,
+    "train_loss": 1.0741935403006417,
+    "loss_first_logged": 1.7350634765625,
+    "loss_last_logged": 0.8838435363769531,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 1.7350634765625
+      },
+      {
+        "step": 100,
+        "loss": 1.1376258087158204
+      },
+      {
+        "step": 150,
+        "loss": 1.0949835968017578
+      },
+      {
+        "step": 200,
+        "loss": 0.9707591247558593
+      },
+      {
+        "step": 250,
+        "loss": 0.8466263580322265
+      },
+      {
+        "step": 300,
+        "loss": 0.850452880859375
+      },
+      {
+        "step": 350,
+        "loss": 0.8838435363769531
+      }
+    ],
+    "global_steps": 350,
+    "model_load_time_s": 37.67,
+    "data_prep_time_s": 1.99,
+    "pure_train_time_s": 658.23,
+    "pure_train_time_min": 10.97,
+    "trainable_params": 17432576,
+    "total_params": 1738007552,
+    "trainable_pct": 1.003,
+    "peak_gpu_memory_gb": 2.24,
+    "adapter_size_mb": 69.78,
+    "eos_token": "<|im_end|>",
+    "eos_token_id": 151645,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 1397,
+      "n_skipped": 0,
+      "n_truncated": 1,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 159.1,
+      "mean_response_tokens": 28.6
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/qwen3_medeasi",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/Qwen3-1.7B-bnb-4bit",
+    "trained_at_utc": "2026-08-30T07:11:49Z"
+  },
+  "deepseek_asset": {
+    "model": "deepseek",
+    "dataset": "asset",
+    "train_examples": 2000,
+    "train_loss": 0.611961368560791,
+    "loss_first_logged": 0.8800191497802734,
+    "loss_last_logged": 0.4693716049194336,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 0.8800191497802734
+      },
+      {
+        "step": 100,
+        "loss": 0.6857083129882813
+      },
+      {
+        "step": 150,
+        "loss": 0.7067652130126953
+      },
+      {
+        "step": 200,
+        "loss": 0.6782223510742188
+      },
+      {
+        "step": 250,
+        "loss": 0.7169922637939453
+      },
+      {
+        "step": 300,
+        "loss": 0.4930751419067383
+      },
+      {
+        "step": 350,
+        "loss": 0.5029045867919922
+      },
+      {
+        "step": 400,
+        "loss": 0.48903682708740237
+      },
+      {
+        "step": 450,
+        "loss": 0.4975182342529297
+      },
+      {
+        "step": 500,
+        "loss": 0.4693716049194336
+      }
+    ],
+    "global_steps": 500,
+    "model_load_time_s": 60.55,
+    "data_prep_time_s": 3.55,
+    "pure_train_time_s": 989.9,
+    "pure_train_time_min": 16.5,
+    "trainable_params": 18464768,
+    "total_params": 1795552768,
+    "trainable_pct": 1.028,
+    "peak_gpu_memory_gb": 2.29,
+    "adapter_size_mb": 73.91,
+    "eos_token": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "eos_token_id": 151643,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 2000,
+      "n_skipped": 0,
+      "n_truncated": 0,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 173.2,
+      "mean_response_tokens": 23.5
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/deepseek_asset",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+    "trained_at_utc": "2026-08-30T07:40:05Z"
+  },
+  "deepseek_medeasi": {
+    "model": "deepseek",
+    "dataset": "medeasi",
+    "train_examples": 1397,
+    "train_loss": 1.2598953356061664,
+    "loss_first_logged": 1.5762973022460938,
+    "loss_last_logged": 1.1192322540283204,
+    "loss_decreased": true,
+    "loss_is_finite": true,
+    "loss_curve": [
+      {
+        "step": 50,
+        "loss": 1.5762973022460938
+      },
+      {
+        "step": 100,
+        "loss": 1.4049722290039062
+      },
+      {
+        "step": 150,
+        "loss": 1.334285430908203
+      },
+      {
+        "step": 200,
+        "loss": 1.2165911865234376
+      },
+      {
+        "step": 250,
+        "loss": 1.0815131378173828
+      },
+      {
+        "step": 300,
+        "loss": 1.0863758087158204
+      },
+      {
+        "step": 350,
+        "loss": 1.1192322540283204
+      }
+    ],
+    "global_steps": 350,
+    "model_load_time_s": 23.13,
+    "data_prep_time_s": 2.55,
+    "pure_train_time_s": 685.58,
+    "pure_train_time_min": 11.43,
+    "trainable_params": 18464768,
+    "total_params": 1795552768,
+    "trainable_pct": 1.028,
+    "peak_gpu_memory_gb": 3.03,
+    "adapter_size_mb": 73.91,
+    "eos_token": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+    "eos_token_id": 151643,
+    "response_only_masking": true,
+    "masking_verified": true,
+    "data_prep_report": {
+      "n_examples": 1397,
+      "n_skipped": 0,
+      "n_truncated": 1,
+      "n_boundary_merge_diff": 0,
+      "mean_tokens": 183.1,
+      "mean_response_tokens": 28.6
+    },
+    "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/deepseek_medeasi",
+    "smoke_test": false,
+    "train_subset_requested": null,
+    "max_train_steps": -1,
+    "num_epochs": 2,
+    "learning_rate": 0.0002,
+    "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+    "batch_size": 2,
+    "grad_accum": 4,
+    "effective_batch": 8,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "max_seq_len": 512,
+    "seed": 42,
+    "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+    "trained_at_utc": "2026-08-30T07:52:01Z"
+  }
+}

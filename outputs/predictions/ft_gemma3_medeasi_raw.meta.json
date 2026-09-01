@@ -1,0 +1,8 @@
+{
+  "system": "ft_gemma3",
+  "dataset": "medeasi",
+  "n": 300,
+  "adapter_signature": "6068ef134c00a4f7",
+  "decoding_signature": "31607132a7b5c0e0",
+  "written_at_utc": "2026-08-30T08:26:18Z"
+}

@@ -1,0 +1,22 @@
+{
+  "asset": {
+    "test_split_size": 359,
+    "n_requested": 359,
+    "n_evaluated": 359,
+    "n_dropped_unscorable": 0,
+    "dropped_indices": [],
+    "max_eval_samples": null,
+    "references_per_source_min": 10,
+    "references_per_source_max": 10
+  },
+  "medeasi": {
+    "test_split_size": 300,
+    "n_requested": 300,
+    "n_evaluated": 300,
+    "n_dropped_unscorable": 0,
+    "dropped_indices": [],
+    "max_eval_samples": null,
+    "references_per_source_min": 1,
+    "references_per_source_max": 1
+  }
+}

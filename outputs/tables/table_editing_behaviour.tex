@@ -1,0 +1,25 @@
+\begin{table}
+\caption{Editing behaviour of each system.}
+\label{tab:behaviour}
+\begin{tabular}{lllrrrrrr}
+\toprule
+dataset & system & display & exact_copy_rate_pct & mean_token_retention_pct & median_token_retention_pct & mean_length_ratio & sentence_split_rate_pct & divergence_rate_pct \\
+\midrule
+asset & identity & Copy source (identity) & 100.00 & 100.00 & 100.00 & 1.00 & 0.00 & 0.00 \\
+asset & gold_loo & Gold reference (LOO) & 0.56 & 63.50 & 64.29 & 0.87 & 23.96 & 1.39 \\
+asset & zeroshot_gemma3 & Gemma-3 1B (zero-shot) & 0.00 & 65.31 & 66.67 & 10.12 & 100.00 & 1.11 \\
+asset & zeroshot_qwen3 & Qwen3 1.7B (zero-shot) & 0.56 & 59.75 & 60.00 & 1.03 & 10.03 & 0.84 \\
+asset & zeroshot_deepseek & DeepSeek-Distill 1.5B (zero-shot) & 12.26 & 69.96 & 75.00 & 3.75 & 42.34 & 4.74 \\
+asset & ft_gemma3 & Gemma-3 1B (fine-tuned) & 4.74 & 71.08 & 72.73 & 0.88 & 17.27 & 0.28 \\
+asset & ft_qwen3 & Qwen3 1.7B (fine-tuned) & 0.00 & 53.63 & 53.33 & 0.88 & 22.84 & 4.74 \\
+asset & ft_deepseek & DeepSeek-Distill 1.5B (fine-tuned) & 2.23 & 65.56 & 66.67 & 0.86 & 15.60 & 1.11 \\
+medeasi & identity & Copy source (identity) & 100.00 & 100.00 & 100.00 & 1.00 & 0.00 & 0.00 \\
+medeasi & zeroshot_gemma3 & Gemma-3 1B (zero-shot) & 0.00 & 54.49 & 54.55 & 12.45 & 99.33 & 3.00 \\
+medeasi & zeroshot_qwen3 & Qwen3 1.7B (zero-shot) & 0.00 & 48.10 & 49.19 & 1.50 & 16.67 & 3.00 \\
+medeasi & zeroshot_deepseek & DeepSeek-Distill 1.5B (zero-shot) & 5.33 & 62.29 & 62.83 & 4.15 & 45.67 & 6.67 \\
+medeasi & ft_gemma3 & Gemma-3 1B (fine-tuned) & 6.33 & 51.02 & 50.00 & 1.02 & 6.33 & 21.67 \\
+medeasi & ft_qwen3 & Qwen3 1.7B (fine-tuned) & 0.00 & 27.75 & 21.24 & 1.29 & 16.00 & 48.00 \\
+medeasi & ft_deepseek & DeepSeek-Distill 1.5B (fine-tuned) & 1.33 & 38.36 & 33.33 & 0.90 & 0.67 & 33.33 \\
+\bottomrule
+\end{tabular}
+\end{table}

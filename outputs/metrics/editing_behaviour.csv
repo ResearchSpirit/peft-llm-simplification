@@ -1,0 +1,16 @@
+dataset,system,display,exact_copy_rate_pct,mean_token_retention_pct,median_token_retention_pct,mean_length_ratio,sentence_split_rate_pct,divergence_rate_pct
+asset,identity,Copy source (identity),100.0,100.0,100.0,1.0,0.0,0.0
+asset,gold_loo,Gold reference (LOO),0.56,63.5,64.29,0.869,23.96,1.39
+asset,zeroshot_gemma3,Gemma-3 1B (zero-shot),0.0,65.31,66.67,10.119,100.0,1.11
+asset,zeroshot_qwen3,Qwen3 1.7B (zero-shot),0.56,59.75,60.0,1.032,10.03,0.84
+asset,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),12.26,69.96,75.0,3.753,42.34,4.74
+asset,ft_gemma3,Gemma-3 1B (fine-tuned),4.74,71.08,72.73,0.88,17.27,0.28
+asset,ft_qwen3,Qwen3 1.7B (fine-tuned),0.0,53.63,53.33,0.875,22.84,4.74
+asset,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),2.23,65.56,66.67,0.862,15.6,1.11
+medeasi,identity,Copy source (identity),100.0,100.0,100.0,1.0,0.0,0.0
+medeasi,zeroshot_gemma3,Gemma-3 1B (zero-shot),0.0,54.49,54.55,12.448,99.33,3.0
+medeasi,zeroshot_qwen3,Qwen3 1.7B (zero-shot),0.0,48.1,49.19,1.497,16.67,3.0
+medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),5.33,62.29,62.83,4.151,45.67,6.67
+medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),6.33,51.02,50.0,1.021,6.33,21.67
+medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),0.0,27.75,21.24,1.291,16.0,48.0
+medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),1.33,38.36,33.33,0.902,0.67,33.33

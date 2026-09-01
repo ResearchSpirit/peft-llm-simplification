@@ -1,0 +1,52 @@
+{
+  "checkpoint_save_steps": 50,
+  "checkpoint_keep": 2,
+  "partial_flush_every": 20,
+  "atomic_writes": true,
+  "bertscore_rescale_derived": false,
+  "bertscore_rescale_check": {
+    "attempted": false
+  },
+  "adapter_reuse_report": {
+    "gemma3_asset": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 2000,
+      "smoke_test": false
+    },
+    "gemma3_medeasi": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 1397,
+      "smoke_test": false
+    },
+    "qwen3_asset": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 2000,
+      "smoke_test": false
+    },
+    "qwen3_medeasi": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 1397,
+      "smoke_test": false
+    },
+    "deepseek_asset": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 2000,
+      "smoke_test": false
+    },
+    "deepseek_medeasi": {
+      "reused": true,
+      "reason": "matches this configuration",
+      "train_examples": 1397,
+      "smoke_test": false
+    }
+  },
+  "retrained_this_run": [],
+  "resumed_inference": {
+    "ft_gemma3_asset": 120
+  }
+}

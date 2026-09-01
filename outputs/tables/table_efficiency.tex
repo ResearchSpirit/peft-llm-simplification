@@ -1,0 +1,16 @@
+\begin{table}
+\caption{Computational efficiency.}
+\label{tab:efficiency}
+\begin{tabular}{llrrrrrrr}
+\toprule
+model & dataset & total_params_M & trainable_params_M & trainable_pct & pure_train_min & ft_latency_s & ft_tokens_per_s & adapter_MB \\
+\midrule
+Gemma-3 1B & ASSET & 1012.90 & 13.05 & 1.29 & 20.59 & 3.59 & 6.69 & 52.23 \\
+Gemma-3 1B & MEDEASI & 1012.90 & 13.05 & 1.29 & 14.48 & 3.72 & 6.69 & 52.23 \\
+Qwen3 1.7B & ASSET & 1738.00 & 17.43 & 1.00 & 15.54 & 1.72 & 13.84 & 69.78 \\
+Qwen3 1.7B & MEDEASI & 1738.00 & 17.43 & 1.00 & 10.97 & 2.17 & 14.15 & 69.78 \\
+DeepSeek-Distill 1.5B & ASSET & 1795.60 & 18.46 & 1.03 & 16.50 & 1.60 & 14.89 & 73.91 \\
+DeepSeek-Distill 1.5B & MEDEASI & 1795.60 & 18.46 & 1.03 & 11.43 & 1.53 & 14.80 & 73.91 \\
+\bottomrule
+\end{tabular}
+\end{table}

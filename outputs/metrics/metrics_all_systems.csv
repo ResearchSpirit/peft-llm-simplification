@@ -1,0 +1,16 @@
+dataset,system,display,sari,bertscore_raw,bertscore_rescaled,bertscore_singleref_raw,fkgl,fkgl_median,fkgl_corpus,n,n_empty_pred,n_scored_bertscore,n_scored_fkgl
+asset,identity,Copy source (identity),53.78,98.63,91.91,95.56,11.64,11.34,11.4,359,0,359,359
+asset,gold_loo,Gold reference (LOO),43.47,96.59,79.79,94.36,8.32,8.01,8.05,359,0,359,359
+asset,zeroshot_gemma3,Gemma-3 1B (zero-shot),40.52,83.99,5.12,83.17,11.91,11.68,12.37,359,0,359,359
+asset,zeroshot_qwen3,Qwen3 1.7B (zero-shot),44.11,96.57,79.69,94.27,9.37,9.14,9.18,359,0,359,359
+asset,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),43.19,92.08,53.05,90.33,11.18,10.69,10.36,359,0,359,359
+asset,ft_gemma3,Gemma-3 1B (fine-tuned),46.57,97.54,85.45,94.92,8.75,8.59,8.58,359,0,359,359
+asset,ft_qwen3,Qwen3 1.7B (fine-tuned),41.96,96.31,78.11,94.12,7.94,7.6,7.58,359,0,359,359
+asset,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),44.71,97.02,82.32,94.52,8.5,8.39,8.35,359,0,359,359
+medeasi,identity,Copy source (identity),49.24,92.04,52.86,92.04,13.64,12.87,13.3,300,0,300,300
+medeasi,zeroshot_gemma3,Gemma-3 1B (zero-shot),37.93,82.26,-5.1,82.26,12.38,12.03,12.72,300,0,300,300
+medeasi,zeroshot_qwen3,Qwen3 1.7B (zero-shot),38.36,90.78,45.37,90.78,10.27,9.78,9.73,300,0,300,300
+medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),37.83,87.68,27.03,87.68,12.62,11.92,11.46,300,0,300,300
+medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),40.27,90.62,44.44,90.62,10.62,10.0,10.32,300,0,300,300
+medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),37.36,88.89,34.18,88.89,10.54,9.83,10.2,300,0,300,300
+medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),37.09,89.52,37.92,89.52,9.89,9.14,9.78,300,0,300,300

@@ -1,0 +1,8 @@
+{
+  "system": "ft_deepseek",
+  "dataset": "medeasi",
+  "n": 300,
+  "adapter_signature": "574479b13d9c0544",
+  "decoding_signature": "31607132a7b5c0e0",
+  "written_at_utc": "2026-08-30T09:06:21Z"
+}

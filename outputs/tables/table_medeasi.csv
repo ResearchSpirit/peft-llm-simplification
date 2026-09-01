@@ -1,0 +1,11 @@
+display,group,sari,bertscore,fkgl,provenance,bertscore_raw,bertscore_singleref_raw
+MUSS-mined,Supervised,35.15,42.55,9.29,reported (not re-run),,
+LLaMA-3.1 70B,Large LLM,39.55,39.41,6.86,reported (not re-run),,
+GPT-4o,Large LLM,40.81,39.89,7.73,reported (not re-run),,
+Copy source (identity),Trivial baseline,49.24,52.86,13.64,measured (this work),92.04,92.04
+Gemma-3 1B (zero-shot),Ours (zero-shot),37.93,-5.1,12.38,measured (this work),82.26,82.26
+Qwen3 1.7B (zero-shot),Ours (zero-shot),38.36,45.37,10.27,measured (this work),90.78,90.78
+DeepSeek-Distill 1.5B (zero-shot),Ours (zero-shot),37.83,27.03,12.62,measured (this work),87.68,87.68
+Gemma-3 1B (fine-tuned),Ours (fine-tuned),40.27,44.44,10.62,measured (this work),90.62,90.62
+Qwen3 1.7B (fine-tuned),Ours (fine-tuned),37.36,34.18,10.54,measured (this work),88.89,88.89
+DeepSeek-Distill 1.5B (fine-tuned),Ours (fine-tuned),37.09,37.92,9.89,measured (this work),89.52,89.52
