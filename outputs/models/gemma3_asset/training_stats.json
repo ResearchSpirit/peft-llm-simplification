@@ -1,0 +1,91 @@
+{
+  "model": "gemma3",
+  "dataset": "asset",
+  "train_examples": 2000,
+  "train_loss": 0.6313691902160644,
+  "loss_first_logged": 1.3480751037597656,
+  "loss_last_logged": 0.4218072509765625,
+  "loss_decreased": true,
+  "loss_is_finite": true,
+  "loss_curve": [
+    {
+      "step": 50,
+      "loss": 1.3480751037597656
+    },
+    {
+      "step": 100,
+      "loss": 0.6952519989013672
+    },
+    {
+      "step": 150,
+      "loss": 0.7038356781005859
+    },
+    {
+      "step": 200,
+      "loss": 0.6500263214111328
+    },
+    {
+      "step": 250,
+      "loss": 0.7031576538085937
+    },
+    {
+      "step": 300,
+      "loss": 0.4431463241577148
+    },
+    {
+      "step": 350,
+      "loss": 0.44724246978759763
+    },
+    {
+      "step": 400,
+      "loss": 0.44604591369628904
+    },
+    {
+      "step": 450,
+      "loss": 0.4551031875610352
+    },
+    {
+      "step": 500,
+      "loss": 0.4218072509765625
+    }
+  ],
+  "global_steps": 500,
+  "model_load_time_s": 40.05,
+  "data_prep_time_s": 2.15,
+  "pure_train_time_s": 1235.28,
+  "pure_train_time_min": 20.59,
+  "trainable_params": 13045760,
+  "total_params": 1012931712,
+  "trainable_pct": 1.288,
+  "peak_gpu_memory_gb": 1.67,
+  "adapter_size_mb": 52.23,
+  "eos_token": "<end_of_turn>",
+  "eos_token_id": 106,
+  "response_only_masking": true,
+  "masking_verified": true,
+  "data_prep_report": {
+    "n_examples": 2000,
+    "n_skipped": 0,
+    "n_truncated": 0,
+    "n_boundary_merge_diff": 0,
+    "mean_tokens": 147.8,
+    "mean_response_tokens": 23.0
+  },
+  "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/gemma3_asset",
+  "smoke_test": false,
+  "train_subset_requested": null,
+  "max_train_steps": -1,
+  "num_epochs": 2,
+  "learning_rate": 0.0002,
+  "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+  "batch_size": 2,
+  "grad_accum": 4,
+  "effective_batch": 8,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "max_seq_len": 512,
+  "seed": 42,
+  "base_model": "unsloth/gemma-3-1b-it-bnb-4bit",
+  "trained_at_utc": "2026-08-30T04:01:06Z"
+}

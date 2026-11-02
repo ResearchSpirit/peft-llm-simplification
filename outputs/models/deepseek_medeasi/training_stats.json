@@ -1,0 +1,79 @@
+{
+  "model": "deepseek",
+  "dataset": "medeasi",
+  "train_examples": 1397,
+  "train_loss": 1.2598953356061664,
+  "loss_first_logged": 1.5762973022460938,
+  "loss_last_logged": 1.1192322540283204,
+  "loss_decreased": true,
+  "loss_is_finite": true,
+  "loss_curve": [
+    {
+      "step": 50,
+      "loss": 1.5762973022460938
+    },
+    {
+      "step": 100,
+      "loss": 1.4049722290039062
+    },
+    {
+      "step": 150,
+      "loss": 1.334285430908203
+    },
+    {
+      "step": 200,
+      "loss": 1.2165911865234376
+    },
+    {
+      "step": 250,
+      "loss": 1.0815131378173828
+    },
+    {
+      "step": 300,
+      "loss": 1.0863758087158204
+    },
+    {
+      "step": 350,
+      "loss": 1.1192322540283204
+    }
+  ],
+  "global_steps": 350,
+  "model_load_time_s": 23.13,
+  "data_prep_time_s": 2.55,
+  "pure_train_time_s": 685.58,
+  "pure_train_time_min": 11.43,
+  "trainable_params": 18464768,
+  "total_params": 1795552768,
+  "trainable_pct": 1.028,
+  "peak_gpu_memory_gb": 3.03,
+  "adapter_size_mb": 73.91,
+  "eos_token": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+  "eos_token_id": 151643,
+  "response_only_masking": true,
+  "masking_verified": true,
+  "data_prep_report": {
+    "n_examples": 1397,
+    "n_skipped": 0,
+    "n_truncated": 1,
+    "n_boundary_merge_diff": 0,
+    "mean_tokens": 183.1,
+    "mean_response_tokens": 28.6
+  },
+  "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/deepseek_medeasi",
+  "smoke_test": false,
+  "train_subset_requested": null,
+  "max_train_steps": -1,
+  "num_epochs": 2,
+  "learning_rate": 0.0002,
+  "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+  "batch_size": 2,
+  "grad_accum": 4,
+  "effective_batch": 8,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "max_seq_len": 512,
+  "seed": 42,
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+  "trained_at_utc": "2026-08-30T07:52:01Z"
+}

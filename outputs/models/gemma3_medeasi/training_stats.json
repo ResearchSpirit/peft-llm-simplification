@@ -1,0 +1,79 @@
+{
+  "model": "gemma3",
+  "dataset": "medeasi",
+  "train_examples": 1397,
+  "train_loss": 1.260417229788644,
+  "loss_first_logged": 2.260802917480469,
+  "loss_last_logged": 0.963299560546875,
+  "loss_decreased": true,
+  "loss_is_finite": true,
+  "loss_curve": [
+    {
+      "step": 50,
+      "loss": 2.260802917480469
+    },
+    {
+      "step": 100,
+      "loss": 1.3409721374511718
+    },
+    {
+      "step": 150,
+      "loss": 1.2770915985107423
+    },
+    {
+      "step": 200,
+      "loss": 1.1112273406982422
+    },
+    {
+      "step": 250,
+      "loss": 0.9322531127929687
+    },
+    {
+      "step": 300,
+      "loss": 0.937273941040039
+    },
+    {
+      "step": 350,
+      "loss": 0.963299560546875
+    }
+  ],
+  "global_steps": 350,
+  "model_load_time_s": 29.41,
+  "data_prep_time_s": 1.82,
+  "pure_train_time_s": 868.78,
+  "pure_train_time_min": 14.48,
+  "trainable_params": 13045760,
+  "total_params": 1012931712,
+  "trainable_pct": 1.288,
+  "peak_gpu_memory_gb": 2.82,
+  "adapter_size_mb": 52.23,
+  "eos_token": "<end_of_turn>",
+  "eos_token_id": 106,
+  "response_only_masking": true,
+  "masking_verified": true,
+  "data_prep_report": {
+    "n_examples": 1397,
+    "n_skipped": 0,
+    "n_truncated": 0,
+    "n_boundary_merge_diff": 0,
+    "mean_tokens": 156.1,
+    "mean_response_tokens": 27.3
+  },
+  "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/gemma3_medeasi",
+  "smoke_test": false,
+  "train_subset_requested": null,
+  "max_train_steps": -1,
+  "num_epochs": 2,
+  "learning_rate": 0.0002,
+  "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+  "batch_size": 2,
+  "grad_accum": 4,
+  "effective_batch": 8,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "max_seq_len": 512,
+  "seed": 42,
+  "base_model": "unsloth/gemma-3-1b-it-bnb-4bit",
+  "trained_at_utc": "2026-08-30T04:16:18Z"
+}

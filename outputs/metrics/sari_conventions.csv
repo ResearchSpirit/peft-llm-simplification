@@ -1,0 +1,16 @@
+dataset,system,display,n,sari_evaluate,sari_del0,sari_xu2016,keep_evaluate,del_evaluate,add_evaluate,keep_xu2016,del_xu2016,add_xu2016,sari_points_from_empty_deletion,pct_nothing_deleted
+asset,identity,Copy source (identity),359,53.78,20.45,20.45,61.35,100.0,0.0,61.35,0.0,0.0,33.33,100.0
+asset,gold_loo,Gold reference (LOO),359,43.47,43.21,43.21,54.39,65.62,10.4,54.39,64.85,10.4,0.26,1.39
+asset,zeroshot_gemma3,Gemma-3 1B (zero-shot),359,40.52,39.36,39.36,51.19,64.24,6.14,51.19,60.75,6.14,1.16,12.26
+asset,zeroshot_qwen3,Qwen3 1.7B (zero-shot),359,44.11,43.83,43.83,52.83,65.76,13.74,52.83,64.92,13.74,0.28,1.67
+asset,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),359,43.19,33.76,33.76,51.84,73.25,4.47,51.84,44.97,4.47,9.43,30.92
+asset,ft_gemma3,Gemma-3 1B (fine-tuned),359,46.57,44.88,44.88,59.73,70.21,9.77,59.73,65.13,9.77,1.69,5.29
+asset,ft_qwen3,Qwen3 1.7B (fine-tuned),359,41.96,41.91,41.91,49.85,64.2,11.81,49.85,64.07,11.81,0.05,0.56
+asset,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),359,44.71,43.94,43.94,57.03,67.35,9.75,57.03,65.05,9.75,0.77,2.51
+medeasi,identity,Copy source (identity),300,49.24,15.91,14.91,45.55,100.0,2.17,44.72,0.0,0.0,33.33,100.0
+medeasi,zeroshot_gemma3,Gemma-3 1B (zero-shot),300,37.93,36.62,33.73,42.15,69.68,1.94,33.48,65.76,1.94,1.31,11.67
+medeasi,zeroshot_qwen3,Qwen3 1.7B (zero-shot),300,38.36,37.74,34.74,41.98,68.21,4.87,32.98,66.38,4.87,0.62,2.67
+medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),300,37.83,30.77,29.05,38.99,72.35,2.15,33.91,51.18,2.07,7.06,22.67
+medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),300,40.27,37.61,34.25,43.75,72.26,4.82,33.91,64.26,4.57,2.66,8.0
+medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),300,37.36,37.0,30.81,41.87,65.93,4.28,23.37,64.85,4.2,0.36,1.0
+medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),300,37.09,36.12,31.73,39.76,67.48,4.03,26.92,64.57,3.7,0.97,2.67

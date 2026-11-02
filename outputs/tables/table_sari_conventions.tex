@@ -1,0 +1,25 @@
+\begin{table}
+\caption{SARI of every system under the evaluate convention (0/0 = 1) and the Xu et al. (2016) convention (0/0 = 0), with the deletion component under each.}
+\label{tab:sari_conventions}
+\begin{tabular}{llrrrrr}
+\toprule
+dataset & display & sari_evaluate & del_evaluate & sari_del0 & sari_xu2016 & del_xu2016 \\
+\midrule
+asset & Copy source (identity) & 53.78 & 100.00 & 20.45 & 20.45 & 0.00 \\
+asset & Gold reference (LOO) & 43.47 & 65.62 & 43.21 & 43.21 & 64.85 \\
+asset & Gemma-3 1B (zero-shot) & 40.52 & 64.24 & 39.36 & 39.36 & 60.75 \\
+asset & Qwen3 1.7B (zero-shot) & 44.11 & 65.76 & 43.83 & 43.83 & 64.92 \\
+asset & DeepSeek-Distill 1.5B (zero-shot) & 43.19 & 73.25 & 33.76 & 33.76 & 44.97 \\
+asset & Gemma-3 1B (fine-tuned) & 46.57 & 70.21 & 44.88 & 44.88 & 65.13 \\
+asset & Qwen3 1.7B (fine-tuned) & 41.96 & 64.20 & 41.91 & 41.91 & 64.07 \\
+asset & DeepSeek-Distill 1.5B (fine-tuned) & 44.71 & 67.35 & 43.94 & 43.94 & 65.05 \\
+medeasi & Copy source (identity) & 49.24 & 100.00 & 15.91 & 14.91 & 0.00 \\
+medeasi & Gemma-3 1B (zero-shot) & 37.93 & 69.68 & 36.62 & 33.73 & 65.76 \\
+medeasi & Qwen3 1.7B (zero-shot) & 38.36 & 68.21 & 37.74 & 34.74 & 66.38 \\
+medeasi & DeepSeek-Distill 1.5B (zero-shot) & 37.83 & 72.35 & 30.77 & 29.05 & 51.18 \\
+medeasi & Gemma-3 1B (fine-tuned) & 40.27 & 72.26 & 37.61 & 34.25 & 64.26 \\
+medeasi & Qwen3 1.7B (fine-tuned) & 37.36 & 65.93 & 37.00 & 30.81 & 64.85 \\
+medeasi & DeepSeek-Distill 1.5B (fine-tuned) & 37.09 & 67.48 & 36.12 & 31.73 & 64.57 \\
+\bottomrule
+\end{tabular}
+\end{table}

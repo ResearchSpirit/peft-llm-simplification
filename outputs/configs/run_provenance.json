@@ -5,7 +5,10 @@
   "atomic_writes": true,
   "bertscore_rescale_derived": false,
   "bertscore_rescale_check": {
-    "attempted": false
+    "attempted": true,
+    "n": 8,
+    "baseline_f1": 0.8312257528305054,
+    "max_abs_diff": 2.021116301875736e-06
   },
   "adapter_reuse_report": {
     "gemma3_asset": {
@@ -48,5 +51,27 @@
   "retrained_this_run": [],
   "resumed_inference": {
     "ft_gemma3_asset": 120
-  }
+  },
+  "notebook_version": "v3-final",
+  "freeze_results": true,
+  "analysis_only_runs": [],
+  "bertscore_source": "recompute",
+  "sari_port_max_abs_diff_vs_evaluate": 2.1316282072803006e-14,
+  "rescore_check": {
+    "bertscore_raw": {
+      "max_abs_diff": 3.5762786865234375e-05,
+      "all_within_tolerance": true
+    },
+    "fkgl": {
+      "max_abs_diff": 3.552713678800501e-15,
+      "all_within_tolerance": true
+    },
+    "sari": {
+      "max_abs_diff": 1.4210854715202004e-14,
+      "all_within_tolerance": true
+    }
+  },
+  "leakage_conclusions_changed": [
+    "medeasi/Gemma-3 1B/sari: +2.35 (sig=True) -> +1.25 (sig=False)"
+  ]
 }

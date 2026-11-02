@@ -1,0 +1,91 @@
+{
+  "model": "deepseek",
+  "dataset": "asset",
+  "train_examples": 2000,
+  "train_loss": 0.611961368560791,
+  "loss_first_logged": 0.8800191497802734,
+  "loss_last_logged": 0.4693716049194336,
+  "loss_decreased": true,
+  "loss_is_finite": true,
+  "loss_curve": [
+    {
+      "step": 50,
+      "loss": 0.8800191497802734
+    },
+    {
+      "step": 100,
+      "loss": 0.6857083129882813
+    },
+    {
+      "step": 150,
+      "loss": 0.7067652130126953
+    },
+    {
+      "step": 200,
+      "loss": 0.6782223510742188
+    },
+    {
+      "step": 250,
+      "loss": 0.7169922637939453
+    },
+    {
+      "step": 300,
+      "loss": 0.4930751419067383
+    },
+    {
+      "step": 350,
+      "loss": 0.5029045867919922
+    },
+    {
+      "step": 400,
+      "loss": 0.48903682708740237
+    },
+    {
+      "step": 450,
+      "loss": 0.4975182342529297
+    },
+    {
+      "step": 500,
+      "loss": 0.4693716049194336
+    }
+  ],
+  "global_steps": 500,
+  "model_load_time_s": 60.55,
+  "data_prep_time_s": 3.55,
+  "pure_train_time_s": 989.9,
+  "pure_train_time_min": 16.5,
+  "trainable_params": 18464768,
+  "total_params": 1795552768,
+  "trainable_pct": 1.028,
+  "peak_gpu_memory_gb": 2.29,
+  "adapter_size_mb": 73.91,
+  "eos_token": "<\uff5cend\u2581of\u2581sentence\uff5c>",
+  "eos_token_id": 151643,
+  "response_only_masking": true,
+  "masking_verified": true,
+  "data_prep_report": {
+    "n_examples": 2000,
+    "n_skipped": 0,
+    "n_truncated": 0,
+    "n_boundary_merge_diff": 0,
+    "mean_tokens": 173.2,
+    "mean_response_tokens": 23.5
+  },
+  "output_path": "/content/drive/MyDrive/sentence_simplification_fix_final/models/deepseek_asset",
+  "smoke_test": false,
+  "train_subset_requested": null,
+  "max_train_steps": -1,
+  "num_epochs": 2,
+  "learning_rate": 0.0002,
+  "learning_rate_rationale": "2e-4, the standard QLoRA setting. 2e-5 (a full fine-tuning rate) was tried first and left the adapter indistinguishable from the base model.",
+  "batch_size": 2,
+  "grad_accum": 4,
+  "effective_batch": 8,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.0,
+  "max_seq_len": 512,
+  "seed": 42,
+  "base_model": "unsloth/DeepSeek-R1-Distill-Qwen-1.5B-bnb-4bit",
+  "trained_at_utc": "2026-08-30T07:40:05Z"
+}

@@ -1,0 +1,34 @@
+\begin{table}
+\caption{Fine-tuned minus zero-shot: paired-bootstrap difference, 95% CI, one-sided p and Holm-adjusted p.}
+\label{tab:significance}
+\begin{tabular}{lllrllr}
+\toprule
+dataset & model & metric & difference & ci95_of_difference & p_one_sided_display & p_holm \\
+\midrule
+asset & Gemma-3 1B & sari & 6.050 & [5.04, 7.09] & <0.001 & 0.000 \\
+asset & Gemma-3 1B & sari_xu2016 & 5.520 & [4.51, 6.55] & <0.001 & 0.000 \\
+asset & Gemma-3 1B & bertscore_raw & 13.560 & [13.36, 13.77] & <0.001 & 0.000 \\
+asset & Gemma-3 1B & fkgl & -3.160 & [-3.49, -2.84] & <0.001 & 0.000 \\
+asset & Qwen3 1.7B & sari & -2.150 & [-3.11, -1.23] & 1.000 & 1.000 \\
+asset & Qwen3 1.7B & sari_xu2016 & -1.920 & [-2.92, -1.00] & 1.000 & 1.000 \\
+asset & Qwen3 1.7B & bertscore_raw & -0.270 & [-0.50, -0.01] & 0.987 & 1.000 \\
+asset & Qwen3 1.7B & fkgl & -1.420 & [-1.73, -1.11] & <0.001 & 0.000 \\
+asset & DeepSeek-Distill 1.5B & sari & 1.530 & [0.29, 2.82] & 0.008 & 0.040 \\
+asset & DeepSeek-Distill 1.5B & sari_xu2016 & 10.180 & [8.78, 11.70] & <0.001 & 0.000 \\
+asset & DeepSeek-Distill 1.5B & bertscore_raw & 4.940 & [4.40, 5.53] & <0.001 & 0.000 \\
+asset & DeepSeek-Distill 1.5B & fkgl & -2.680 & [-3.02, -2.36] & <0.001 & 0.000 \\
+medeasi & Gemma-3 1B & sari & 2.350 & [0.44, 4.23] & 0.008 & 0.040 \\
+medeasi & Gemma-3 1B & sari_xu2016 & 0.520 & [-1.04, 2.06] & 0.264 & 0.792 \\
+medeasi & Gemma-3 1B & bertscore_raw & 8.360 & [7.98, 8.76] & <0.001 & 0.000 \\
+medeasi & Gemma-3 1B & fkgl & -1.760 & [-2.28, -1.24] & <0.001 & 0.000 \\
+medeasi & Qwen3 1.7B & sari & -0.990 & [-2.68, 0.60] & 0.889 & 1.000 \\
+medeasi & Qwen3 1.7B & sari_xu2016 & -3.940 & [-5.25, -2.55] & 1.000 & 1.000 \\
+medeasi & Qwen3 1.7B & bertscore_raw & -1.890 & [-2.24, -1.50] & 1.000 & 1.000 \\
+medeasi & Qwen3 1.7B & fkgl & 0.270 & [-0.29, 0.89] & 0.818 & 0.818 \\
+medeasi & DeepSeek-Distill 1.5B & sari & -0.740 & [-2.69, 1.00] & 0.782 & 1.000 \\
+medeasi & DeepSeek-Distill 1.5B & sari_xu2016 & 2.680 & [0.83, 4.64] & 0.002 & 0.008 \\
+medeasi & DeepSeek-Distill 1.5B & bertscore_raw & 1.840 & [1.32, 2.37] & <0.001 & 0.000 \\
+medeasi & DeepSeek-Distill 1.5B & fkgl & -2.730 & [-3.56, -2.05] & <0.001 & 0.000 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,6 +1,6 @@
-probe,prediction,sari
-copy the source verbatim,The chemotherapy regimen was administered intravenously over six hours.,45.87
-a genuine simplification (matches reference 1),The chemo drugs were given through a vein over six hours.,83.86
-delete half the sentence,The chemotherapy regimen was administered.,23.8
-unrelated sentence,The weather in Jakarta is hot today.,31.38
-empty output,,25.11
+probe,prediction,sari,keep,delete,add,sari_xu2016,delete_xu2016,port_matches_evaluate
+copy the source verbatim,The chemotherapy regimen was administered intravenously over six hours.,45.87,37.61,100.0,0.0,12.54,0.0,True
+a genuine simplification (matches reference 1),The chemo drugs were given through a vein over six hours.,83.86,84.51,100.0,67.09,83.86,100.0,True
+delete half the sentence,The chemotherapy regimen was administered.,23.8,9.52,61.88,0.0,23.8,61.88,True
+unrelated sentence,The weather in Jakarta is hot today.,31.38,15.38,78.77,0.0,31.38,78.77,True
+empty output,,25.11,0.0,75.33,0.0,25.11,75.33,True

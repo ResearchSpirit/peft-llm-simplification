@@ -14,3 +14,4 @@ medeasi,zeroshot_deepseek,DeepSeek-Distill 1.5B (zero-shot),5.33,62.29,62.83,4.1
 medeasi,ft_gemma3,Gemma-3 1B (fine-tuned),6.33,51.02,50.0,1.021,6.33,21.67
 medeasi,ft_qwen3,Qwen3 1.7B (fine-tuned),0.0,27.75,21.24,1.291,16.0,48.0
 medeasi,ft_deepseek,DeepSeek-Distill 1.5B (fine-tuned),1.33,38.36,33.33,0.902,0.67,33.33
+medeasi,reference,Human reference (ref. 1),0.0,49.84,46.67,1.261,13.67,18.67

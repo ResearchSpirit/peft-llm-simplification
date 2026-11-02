@@ -1,6 +1,7 @@
 {
-  "title": "Scaling Down Simplicity: Evaluating Lightweight Language Models for Sentence Simplification",
-  "notebook_version": "v2",
+  "title": "Parameter-Efficient Fine-Tuning of Sub-2B Language Models for General and Biomedical Sentence Simplification",
+  "venue": "ICoDiT 2026 (Paper ID 162)",
+  "notebook_version": "v3-final",
   "seed": 42,
   "smoke_test": false,
   "datasets": {
@@ -76,12 +77,22 @@
     ]
   },
   "metrics": {
-    "sari": "HuggingFace evaluate 'sari', all available references",
-    "bertscore_raw": "bert-score 0.3.12, roberta-large, layer 17, multi-reference (max), NO baseline rescaling",
+    "sari": "HuggingFace evaluate 'sari' 0.4.6, per-sentence mean over all available references; lowercased, sacrebleu 13a; 0/0 = 1 for keep, delete and add",
+    "sari_xu2016": "same predictions, references, tokenisation and keep-recall; 0/0 = 0 for keep, delete and add (Xu et al. 2016 convention). Port verified against evaluate to < 1e-9 on every sentence (Section 10d)",
+    "bertscore_raw": "bert-score 0.3.13, roberta-large, layer 17, multi-reference (max), NO baseline rescaling",
     "bertscore_rescaled": "same, rescale_with_baseline=True",
     "bertscore_singleref_raw": "raw, first reference only - kept for continuity with V1",
-    "fkgl": "textstat (0, 7, 13) flesch_kincaid_grade, mean over sentences"
+    "fkgl": "textstat 0.7.13 flesch_kincaid_grade, mean over sentences; empty outputs excluded"
   },
+  "statistics": {
+    "bootstrap_resamples": 1000,
+    "bootstrap_seed": 1234,
+    "confidence_interval": "95% percentile bootstrap over test sentences",
+    "paired_test": "one-sided paired bootstrap, alternative in each metric's better direction",
+    "multiplicity": "Holm-Bonferroni within each metric over the 6 model x corpus tests",
+    "overlap_sensitivity": "Med-EASi re-tested on test sources absent from train (exact match after lowercasing and whitespace normalisation)"
+  },
+  "bertscore_source_this_session": "recompute",
   "literature_baselines": "Qiang et al. (2025), arXiv:2502.08281 - reported values, not re-run here",
   "framework": "Unsloth + HF Trainer",
   "environment": {
@@ -110,5 +121,50 @@
     "unsloth": "2026.8.22",
     "in_colab": true,
     "smoke_test": false
+  },
+  "analysis_session_environment": {
+    "timestamp_utc": "2026-11-02T08:24:59Z",
+    "python": "3.13.16",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "gpu_total_memory_gb": 15.64,
+    "bf16_supported": false,
+    "transformers": "5.17.0",
+    "peft": "0.21.2",
+    "datasets": "4.8.5",
+    "evaluate": "0.4.6",
+    "bert_score": "0.3.12",
+    "textstat": [
+      0,
+      7,
+      13
+    ],
+    "matplotlib": "3.10.0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "unsloth_available": true,
+    "unsloth": "2026.10.11",
+    "in_colab": true,
+    "smoke_test": false,
+    "distributions": {
+      "torch": "2.11.0+cu130",
+      "transformers": "5.17.0",
+      "peft": "0.21.2",
+      "datasets": "4.8.5",
+      "evaluate": "0.4.6",
+      "bert-score": "0.3.13",
+      "textstat": "0.7.13",
+      "sacrebleu": "2.6.0",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.15.0",
+      "unsloth": "2026.10.11",
+      "unsloth_zoo": "2026.10.11",
+      "trl": "1.15.0",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "matplotlib": "3.10.0"
+    }
   }
 }
