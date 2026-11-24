@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code, the adapters or the results, please cite the paper below."
+title: "Parameter-Efficient Fine-Tuning of Sub-2B Language Models for General and Biomedical Sentence Simplification"
+type: software
+license: MIT
+repository-code: "https://github.com/ResearchSpirit/peft-llm-simplification"
+authors:
+  - family-names: Wijaya
+    given-names: Stanley Nathanael
+    affiliation: "School of Computer Science, Bina Nusantara University"
+  - family-names: Philip
+    given-names: Samuel
+    affiliation: "School of Computer Science, Bina Nusantara University"
+keywords:
+  - sentence simplification
+  - parameter-efficient fine-tuning
+  - QLoRA
+  - small language models
+  - biomedical text simplification
+preferred-citation:
+  type: conference-paper
+  title: "Parameter-Efficient Fine-Tuning of Sub-2B Language Models for General and Biomedical Sentence Simplification"
+  authors:
+    - family-names: Wijaya
+      given-names: Stanley Nathanael
+    - family-names: Philip
+      given-names: Samuel
+  collection-title: "Proceedings of the 1st International Conference on Computing and Digital Technology (ICoDiT 2026)"
+  publisher:
+    name: "Springer Nature"
+  conference:
+    name: "1st International Conference on Computing and Digital Technology (ICoDiT 2026)"
+    city: "Tangerang"
+    country: ID
+  year: 2026
